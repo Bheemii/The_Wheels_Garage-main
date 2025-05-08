@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* New Light Theme - Sophisticated, Clean, Premium */
+    --background: 210 20% 98%; /* #F9FAFB - Light, clean off-white */
+    --foreground: 220 10% 20%; /* #2D3139 - Dark, serious grey-blue for text */
+    
+    --card: 0 0% 100%; /* #FFFFFF - Pure White for cards */
+    --card-foreground: 220 10% 20%; /* #2D3139 - Consistent with main foreground */
+    
+    --popover: 0 0% 100%; /* #FFFFFF - Pure White for popovers */
+    --popover-foreground: 220 10% 20%; /* #2D3139 - Consistent with main foreground */
+    
+    --primary: 205 65% 40%; /* #3B7CBD - Deeper, corporate blue */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF - White text on primary */
+    
+    --secondary: 210 20% 94%; /* #EAEFF4 - Light grey for secondary elements */
+    --secondary-foreground: 205 65% 40%; /* #3B7CBD - Primary color for text on secondary */
+    
+    --muted: 210 15% 80%; /* #C4CBD3 - Softer Muted Gray */
+    --muted-foreground: 220 10% 45%; /* #676E7C - Darker Muted Gray for subdued text */
+    
+    --accent: 35 85% 55%; /* #F2A93B - Sophisticated gold/bronze */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF - White text on accent for high contrast */
+    
+    --destructive: 0 70% 50%; /* #E04848 - Clear, noticeable Red */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF - White text on destructive */
+    
+    --border: 210 15% 88%; /* #DDE1E6 - Softer Gray border */
+    --input: 210 15% 96%; /* #F0F3F5 - Lighter input background */
+    --ring: 205 65% 45%; /* #4385CA - Slightly brighter blue for focus rings */
+
+    --chart-1: 205 65% 50%; 
+    --chart-2: 35 85% 60%;  
+    --chart-3: 180 40% 45%; 
+    --chart-4: 270 50% 55%; 
+    --chart-5: 220 10% 60%; 
+    --radius: 0.75rem; /* Consistent modern radius */
+
+    /* Sidebar colors light */
+    --sidebar-background: 210 20% 97%; /* Slightly lighter than main background */
+    --sidebar-foreground: 220 10% 22%;
+    --sidebar-primary: 205 65% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 92%;
+    --sidebar-accent-foreground: 205 65% 38%;
+    --sidebar-border: 210 15% 86%;
+    --sidebar-ring: 205 65% 45%;
+  }
+
+  .dark {
+    /* New Dark Theme - Sleek, Modern, Focused */
+    --background: 220 15% 10%; /* #14171C - Very dark desaturated blue/charcoal */
+    --foreground: 210 20% 90%; /* #DEE3E9 - Off-white for text */
+
+    --card: 220 15% 15%; /* #1E2229 - Darker card background */
+    --card-foreground: 210 20% 90%; /* #DEE3E9 - Consistent with main foreground */
+
+    --popover: 220 15% 15%; /* #1E2229 - Darker popover background */
+    --popover-foreground: 210 20% 90%; /* #DEE3E9 - Consistent with main foreground */
+
+    --primary: 35 85% 60%; /* #F5B041 - Gold becomes primary accent */
+    --primary-foreground: 220 10% 10%; /* #121418 - Very dark text on gold for contrast */
+
+    --secondary: 220 15% 20%; /* #292E38 - Dark grey for secondary elements */
+    --secondary-foreground: 210 20% 80%; /* #CBD2DB - Lighter gray for text on dark secondary */
+
+    --muted: 220 10% 35%; /* #4E5562 - Muted Dark Gray */
+    --muted-foreground: 210 15% 70%; /* #A7B0BD - Lighter Muted Gray for text */
+
+    --accent: 200 70% 55%; /* #4CB8F7 - Cool, bright blue as secondary accent */
+    --accent-foreground: 220 15% 10%; /* #14171C - Dark text on bright blue accent */
+
+    --destructive: 0 75% 55%; /* #EE4B4B - Bright, clear Red */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF - White text on destructive */
+
+    --border: 220 15% 25%; /* #353B47 - Subtle Dark Border */
+    --input: 220 15% 22%; /* #2D323B - Dark input backgrounds */
+    --ring: 35 85% 65%; /* #F7B850 - Brighter Gold for focus rings */
+    
+    --chart-1: 35 85% 65%; 
+    --chart-2: 200 70% 60%; 
+    --chart-3: 150 50% 50%; 
+    --chart-4: 300 50% 60%; 
+    --chart-5: 0 0% 75%;    
+
+    /* Sidebar colors dark */
+    --sidebar-background: 220 15% 8%; /* Even darker for sidebar */
+    --sidebar-foreground: 210 20% 92%;
+    --sidebar-primary: 35 85% 58%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 15% 13%;
+    --sidebar-accent-foreground: 35 85% 58%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 35 85% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
