@@ -36,8 +36,8 @@ export default function HomePage() {
         subtitle="Browse thousands of new and used cars, or let our AI guide you to the perfect match."
         ctaText="Explore Car Gallery"
         ctaLink="/gallery"
-        imageUrl="https://picsum.photos/seed/family-suv-roadtrip/1920/1080"
-        imageHint="family car roadtrip" 
+        imageUrl="/images/main.jpeg"
+        imageHint="car " 
       />
 
       <section className="py-12 md:py-20 bg-background">

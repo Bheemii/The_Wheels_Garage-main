@@ -108,7 +108,7 @@ export default function ContactPage() {
           <Card className="shadow-xl overflow-hidden bg-card border border-border rounded-xl flex-grow flex flex-col h-full">
             <div className="relative w-full h-72 md:h-96 lg:h-[450px] bg-muted">
               <Image
-                src="https://picsum.photos/seed/dealership-map/1200/800"
+                src="/images/srikanth.jpg"
                 alt="The Wheels Garage Showroom Location"
                 fill
                 style={{ objectFit: 'cover' }}
